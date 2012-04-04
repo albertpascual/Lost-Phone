@@ -43,4 +43,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)nextPressed:(id)sender {
+    
+}
+
+- (IBAction)cancelPressed:(id)sender {
+    [self.delegate finishedAndDismissed];
+}
+
 @end
