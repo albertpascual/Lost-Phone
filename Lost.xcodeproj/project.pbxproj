@@ -63,6 +63,8 @@
 		76753122152AAECA00D077DF /* 001_55.png in Resources */ = {isa = PBXBuildFile; fileRef = 7675311C152AAECA00D077DF /* 001_55.png */; };
 		76753123152AAECA00D077DF /* 001_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7675311D152AAECA00D077DF /* 001_60.png */; };
 		769CCC5B152BF673007D2A0D /* arrow-down-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 769CCC5A152BF673007D2A0D /* arrow-down-4.png */; };
+		769CCC64152C165C007D2A0D /* InputInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769CCC62152C165C007D2A0D /* InputInfoViewController.m */; };
+		769CCC65152C165C007D2A0D /* InputInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769CCC63152C165C007D2A0D /* InputInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +131,10 @@
 		7675311C152AAECA00D077DF /* 001_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_55.png; sourceTree = "<group>"; };
 		7675311D152AAECA00D077DF /* 001_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_60.png; sourceTree = "<group>"; };
 		769CCC5A152BF673007D2A0D /* arrow-down-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down-4.png"; sourceTree = "<group>"; };
+		769CCC61152C165C007D2A0D /* InputInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputInfoViewController.h; sourceTree = "<group>"; };
+		769CCC62152C165C007D2A0D /* InputInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputInfoViewController.m; sourceTree = "<group>"; };
+		769CCC63152C165C007D2A0D /* InputInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputInfoViewController.xib; sourceTree = "<group>"; };
+		769CCC66152C1954007D2A0D /* LostDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LostDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,10 @@
 				767530B4152A9FAA00D077DF /* ViewController_iPhone.xib */,
 				767530B7152A9FAB00D077DF /* ViewController_iPad.xib */,
 				767530A6152A9FAA00D077DF /* Supporting Files */,
+				769CCC61152C165C007D2A0D /* InputInfoViewController.h */,
+				769CCC62152C165C007D2A0D /* InputInfoViewController.m */,
+				769CCC63152C165C007D2A0D /* InputInfoViewController.xib */,
+				769CCC66152C1954007D2A0D /* LostDelegate.h */,
 			);
 			path = Lost;
 			sourceTree = "<group>";
@@ -400,6 +410,7 @@
 				76753122152AAECA00D077DF /* 001_55.png in Resources */,
 				76753123152AAECA00D077DF /* 001_60.png in Resources */,
 				769CCC5B152BF673007D2A0D /* arrow-down-4.png in Resources */,
+				769CCC65152C165C007D2A0D /* InputInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +426,7 @@
 				767530B3152A9FAA00D077DF /* ViewController.m in Sources */,
 				7675310B152AA75C00D077DF /* QuadCurveMenu.m in Sources */,
 				7675310C152AA75C00D077DF /* QuadCurveMenuItem.m in Sources */,
+				769CCC64152C165C007D2A0D /* InputInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

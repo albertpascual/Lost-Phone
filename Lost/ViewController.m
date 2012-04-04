@@ -17,10 +17,15 @@
 @synthesize menu = _menu;
 @synthesize imageMoving = _imageMoving;
 @synthesize movingTimer = _movingTimer;
+@synthesize mover = _mover;
+@synthesize bBack = _bBack;
+@synthesize inputView = _inputView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.mover = 1;
 	
     UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
     
@@ -30,26 +35,26 @@
                                                                highlightedImage:nil 
                                                                    ContentImage:nil 
                                                         highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_37.png"]
+    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_40.png"]
                                                                highlightedImage:storyMenuItemImagePressed 
                                                                    ContentImage:nil 
                                                         highlightedContentImage:nil];
-//    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_40.png"]
+    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_55.png"]
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:nil 
+                                                        highlightedContentImage:nil];
+//    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_37.png"]
 //                                                               highlightedImage:storyMenuItemImagePressed 
 //                                                                   ContentImage:nil 
 //                                                        highlightedContentImage:nil];
-//    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_50.png"]
-//                                                               highlightedImage:storyMenuItemImagePressed 
-//                                                                   ContentImage:nil 
-//                                                        highlightedContentImage:nil];
-//    QuadCurveMenuItem *starMenuItem5 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_55.png"]
+//    QuadCurveMenuItem *starMenuItem5 = [[QuadCurveMenuItem alloc] initWithImage:[UIImage imageNamed:@"001_50.png"]
 //                                                               highlightedImage:storyMenuItemImagePressed 
 //                                                                   ContentImage:nil
 //                                                        highlightedContentImage:nil];
 //    
     
     
-    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, nil];
+    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, nil];
     
     CGFloat fX = 160;
     CGFloat fY = 300;
@@ -73,8 +78,24 @@
     [self.view addSubview:self.menu];
     
     // Start timer to animate image
-    self.movingTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
-                                                      selector:@selector(requestTimerReady) userInfo:nil repeats:NO];
+    self.movingTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self
+                                                      selector:@selector(requestTimerReady) userInfo:nil repeats:YES];
+}
+
+- (void)requestTimerReady {
+    // Animate the image
+    //self.imageMoving.frame.origin.y = self.imageMoving.frame.origin.y + 1;
+    
+    if ( self.mover == 100 && self.bBack == NO)        
+        self.bBack = YES;
+    
+    if ( self.mover == 0 && self.bBack == YES )
+        self.bBack = NO;
+    
+    if ( self.bBack == NO)
+        self.imageMoving.transform = CGAffineTransformMakeTranslation(0, self.mover++);
+    else
+        self.imageMoving.transform = CGAffineTransformMakeTranslation(0, self.mover--);
 }
 
 - (void)viewDidUnload
@@ -90,6 +111,28 @@
     } else {
         return YES;
     }
+}
+
+- (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
+{
+    if ( idx == 0 ) {
+        //Home
+        self.inputView = [[InputInfoViewController alloc] initWithNibName:@"InputInfoViewController" bundle:nil];
+        [self presentModalViewController:self.inputView animated:YES];
+        
+    }
+    else if ( idx == 1 ) {
+        // World
+    }
+    
+    else if (idx == 3 ) {
+        //Last
+    }
+}
+
+- (void) finishedAndDismissed
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

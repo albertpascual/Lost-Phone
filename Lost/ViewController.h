@@ -10,11 +10,16 @@
 
 #import "QuadCurveMenu.h"
 #import "QuadCurveMenuItem.h"
+#import "InputInfoViewController.h"
+#import "LostDelegate.h"
 
-@interface ViewController : UIViewController <QuadCurveMenuDelegate>
+@interface ViewController : UIViewController <QuadCurveMenuDelegate, LostDelegate>
 
 @property (nonatomic,strong) QuadCurveMenu *menu;
 @property (nonatomic,strong) IBOutlet UIImageView *imageMoving;
 @property (nonatomic,strong) NSTimer *movingTimer;
+@property (nonatomic) CGFloat mover;
+@property (nonatomic) BOOL bBack;
+@property (nonatomic,strong) InputInfoViewController *inputView;
 
 @end
