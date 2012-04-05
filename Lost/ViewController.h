@@ -12,6 +12,7 @@
 #import "QuadCurveMenuItem.h"
 #import "InputInfoViewController.h"
 #import "LostDelegate.h"
+#import "ImageLibraryViewController.h"
 
 @interface ViewController : UIViewController <QuadCurveMenuDelegate, LostDelegate>
 
@@ -21,5 +22,6 @@
 @property (nonatomic) CGFloat mover;
 @property (nonatomic) BOOL bBack;
 @property (nonatomic,strong) InputInfoViewController *inputView;
+@property (nonatomic,strong) ImageLibraryViewController *imageLibrary;
 
 @end

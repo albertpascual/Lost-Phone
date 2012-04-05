@@ -20,6 +20,7 @@
 @synthesize mover = _mover;
 @synthesize bBack = _bBack;
 @synthesize inputView = _inputView;
+@synthesize imageLibrary = _imageLibrary;
 
 - (void)viewDidLoad
 {
@@ -123,6 +124,8 @@
     }
     else if ( idx == 1 ) {
         // World
+        self.imageLibrary = [[ImageLibraryViewController alloc] initWithNibName:@"ImageLibraryViewController" bundle:nil];
+        [self presentModalViewController:self.imageLibrary animated:YES];
     }
     
     else if (idx == 3 ) {
@@ -133,6 +136,12 @@
 - (void) finishedAndDismissed
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) nextStep:(NSInteger)screen
+{
+    [self dismissModalViewControllerAnimated:YES];    
+    [self quadCurveMenu:nil didSelectIndex:screen];    
 }
 
 @end

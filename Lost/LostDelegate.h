@@ -11,5 +11,6 @@
 @protocol LostDelegate <NSObject>
 
 - (void) finishedAndDismissed;
+- (void) nextStep:(NSInteger)screen;
 
 @end

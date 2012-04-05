@@ -15,6 +15,7 @@
 @implementation InputInfoViewController
 
 @synthesize delegate = _delegate;
+@synthesize textToSave = _textToSave;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ( [defaults objectForKey:@"textToSave"] != nil )
+        self.textToSave.text = [defaults objectForKey:@"textToSave"];
+        
 }
 
 - (void)viewDidUnload
@@ -44,7 +49,12 @@
 }
 
 - (IBAction)nextPressed:(id)sender {
-    
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.textToSave.text forKey:@"textToSave"];
+    [defaults synchronize];
+
+    [self.delegate nextStep:1];
 }
 
 - (IBAction)cancelPressed:(id)sender {
