@@ -21,6 +21,8 @@
 @synthesize bBack = _bBack;
 @synthesize inputView = _inputView;
 @synthesize imageLibrary = _imageLibrary;
+@synthesize timer = _timer;
+@synthesize lastMenu = _lastMenu;
 
 - (void)viewDidLoad
 {
@@ -119,6 +121,7 @@
     if ( idx == 0 ) {
         //Home
         self.inputView = [[InputInfoViewController alloc] initWithNibName:@"InputInfoViewController" bundle:nil];
+        self.inputView.delegate = self;
         [self presentModalViewController:self.inputView animated:YES];
         
     }
@@ -140,8 +143,14 @@
 
 - (void) nextStep:(NSInteger)screen
 {
-    [self dismissModalViewControllerAnimated:YES];    
-    [self quadCurveMenu:nil didSelectIndex:screen];    
+    [self dismissModalViewControllerAnimated:YES]; 
+    self.lastMenu = screen;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
+                                                selector:@selector(changeMenu) userInfo:nil repeats:NO];      
+}
+
+-(void) changeMenu {
+    [self quadCurveMenu:nil didSelectIndex:self.lastMenu]; 
 }
 
 @end

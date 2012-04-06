@@ -15,7 +15,9 @@
 @implementation InputInfoViewController
 
 @synthesize delegate = _delegate;
-@synthesize textToSave = _textToSave;
+@synthesize line1 = _line1;
+@synthesize line2 = _line2;
+@synthesize line3 = _line3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +33,12 @@
     [super viewDidLoad];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ( [defaults objectForKey:@"textToSave"] != nil )
-        self.textToSave.text = [defaults objectForKey:@"textToSave"];
+    if ( [defaults objectForKey:@"line1"] != nil )
+        self.line1.text = [defaults objectForKey:@"line1"];
+    if ( [defaults objectForKey:@"line2"] != nil )
+        self.line2.text = [defaults objectForKey:@"line2"];
+    if ( [defaults objectForKey:@"line3"] != nil )
+        self.line3.text = [defaults objectForKey:@"line3"];
         
 }
 
@@ -51,7 +57,9 @@
 - (IBAction)nextPressed:(id)sender {
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:self.textToSave.text forKey:@"textToSave"];
+    [defaults setObject:self.line1.text forKey:@"line1"];
+    [defaults setObject:self.line2.text forKey:@"line2"];
+    [defaults setObject:self.line3.text forKey:@"line3"];
     [defaults synchronize];
 
     [self.delegate nextStep:1];

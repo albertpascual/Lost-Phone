@@ -23,5 +23,7 @@
 @property (nonatomic) BOOL bBack;
 @property (nonatomic,strong) InputInfoViewController *inputView;
 @property (nonatomic,strong) ImageLibraryViewController *imageLibrary;
+@property (nonatomic,strong) NSTimer *timer;
+@property (nonatomic) NSInteger lastMenu;
 
 @end

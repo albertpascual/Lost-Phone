@@ -13,6 +13,8 @@
 @interface InputInfoViewController : UIViewController
 
 @property (nonatomic,strong) id <LostDelegate> delegate;
-@property (nonatomic,strong) IBOutlet UITextView *textToSave;
+@property (nonatomic,strong) IBOutlet UITextField *line1;
+@property (nonatomic,strong) IBOutlet UITextField *line2;
+@property (nonatomic,strong) IBOutlet UITextField *line3;
 
 @end
