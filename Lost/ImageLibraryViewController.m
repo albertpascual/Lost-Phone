@@ -134,6 +134,7 @@
     CGContextSetRGBFillColor(context, 0.0, 0.0, 1.0, 1);
 	
     char* chartext1	= (char *)[text1 cStringUsingEncoding:NSASCIIStringEncoding];
+<<<<<<< HEAD
     CGContextSelectFont(context, "Futura-Medium", 44, kCGEncodingMacRoman);    
     CGContextSetTextDrawingMode(context, kCGTextFill);
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
@@ -143,6 +144,17 @@
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
     char* chartext3	= (char *)[text3 cStringUsingEncoding:NSASCIIStringEncoding];
     CGContextSelectFont(context, "Futura-Medium", 44, kCGEncodingMacRoman);
+=======
+    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
+    CGContextSetTextDrawingMode(context, kCGTextFill);
+    CGContextSetRGBFillColor(context, 255, 255, 255, 1);
+    char* chartext2	= (char *)[text2 cStringUsingEncoding:NSASCIIStringEncoding];
+    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
+    CGContextSetTextDrawingMode(context, kCGTextFill);
+    CGContextSetRGBFillColor(context, 255, 255, 255, 1);
+    char* chartext3	= (char *)[text3 cStringUsingEncoding:NSASCIIStringEncoding];
+    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
+>>>>>>> see how it works
     CGContextSetTextDrawingMode(context, kCGTextFill);
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
 	
