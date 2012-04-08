@@ -23,6 +23,7 @@
 @synthesize imageLibrary = _imageLibrary;
 @synthesize timer = _timer;
 @synthesize lastMenu = _lastMenu;
+@synthesize about = _about;
 
 - (void)viewDidLoad
 {
@@ -63,7 +64,7 @@
     CGFloat fY = 300;
     if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         fX = 400;
-        fY = 650;
+        fY = 680;
     }
     
     self.menu =[[QuadCurveMenu alloc] initWithFrame:self.view.bounds menus:menus startPoint:CGPointMake(fX,fY)];    
@@ -121,6 +122,10 @@
     if ( idx == 0 ) {
         //Home
         self.inputView = [[InputInfoViewController alloc] initWithNibName:@"InputInfoViewController" bundle:nil];
+        
+        if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+            self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
+        
         self.inputView.delegate = self;
         [self presentModalViewController:self.inputView animated:YES];
         
@@ -128,11 +133,23 @@
     else if ( idx == 1 ) {
         // World
         self.imageLibrary = [[ImageLibraryViewController alloc] initWithNibName:@"ImageLibraryViewController" bundle:nil];
+        
+        if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+            self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
+        
+        self.imageLibrary.delegate = self;
         [self presentModalViewController:self.imageLibrary animated:YES];
     }
     
-    else if (idx == 3 ) {
+    else if (idx == 2 ) {
         //Last
+        self.about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+        
+        if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+            self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
+        
+        self.about.delegate = self;
+        [self presentModalViewController:self.about animated:YES];
     }
 }
 

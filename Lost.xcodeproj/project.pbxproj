@@ -67,6 +67,8 @@
 		769CCC65152C165C007D2A0D /* InputInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769CCC63152C165C007D2A0D /* InputInfoViewController.xib */; };
 		769CCC6A152D4C48007D2A0D /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769CCC68152D4C48007D2A0D /* ImageLibraryViewController.m */; };
 		769CCC6B152D4C48007D2A0D /* ImageLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769CCC69152D4C48007D2A0D /* ImageLibraryViewController.xib */; };
+		76AF65371530E6AB0049193E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF65351530E6AB0049193E /* AboutViewController.m */; };
+		76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AF65361530E6AB0049193E /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +142,9 @@
 		769CCC67152D4C48007D2A0D /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
 		769CCC68152D4C48007D2A0D /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
 		769CCC69152D4C48007D2A0D /* ImageLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageLibraryViewController.xib; sourceTree = "<group>"; };
+		76AF65341530E6AB0049193E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		76AF65351530E6AB0049193E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		76AF65361530E6AB0049193E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +209,9 @@
 				769CCC67152D4C48007D2A0D /* ImageLibraryViewController.h */,
 				769CCC68152D4C48007D2A0D /* ImageLibraryViewController.m */,
 				769CCC69152D4C48007D2A0D /* ImageLibraryViewController.xib */,
+				76AF65341530E6AB0049193E /* AboutViewController.h */,
+				76AF65351530E6AB0049193E /* AboutViewController.m */,
+				76AF65361530E6AB0049193E /* AboutViewController.xib */,
 			);
 			path = Lost;
 			sourceTree = "<group>";
@@ -420,6 +428,7 @@
 				769CCC5B152BF673007D2A0D /* arrow-down-4.png in Resources */,
 				769CCC65152C165C007D2A0D /* InputInfoViewController.xib in Resources */,
 				769CCC6B152D4C48007D2A0D /* ImageLibraryViewController.xib in Resources */,
+				76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +446,7 @@
 				7675310C152AA75C00D077DF /* QuadCurveMenuItem.m in Sources */,
 				769CCC64152C165C007D2A0D /* InputInfoViewController.m in Sources */,
 				769CCC6A152D4C48007D2A0D /* ImageLibraryViewController.m in Sources */,
+				76AF65371530E6AB0049193E /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

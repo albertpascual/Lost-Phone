@@ -13,6 +13,7 @@
 #import "InputInfoViewController.h"
 #import "LostDelegate.h"
 #import "ImageLibraryViewController.h"
+#import "AboutViewController.h"
 
 @interface ViewController : UIViewController <QuadCurveMenuDelegate, LostDelegate>
 
@@ -25,5 +26,6 @@
 @property (nonatomic,strong) ImageLibraryViewController *imageLibrary;
 @property (nonatomic,strong) NSTimer *timer;
 @property (nonatomic) NSInteger lastMenu;
+@property (nonatomic,strong) AboutViewController *about;
 
 @end

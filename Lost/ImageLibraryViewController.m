@@ -23,6 +23,7 @@
 @synthesize cancelButton = _cancelButton;
 @synthesize delegate = _delegate;
 @synthesize photo = _photo;
+@synthesize pop = _pop;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,7 +63,14 @@
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    [self presentModalViewController:picker animated:YES];
+    
+    if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ) {
+        self.pop = [[ UIPopoverController alloc] initWithContentViewController:picker];
+        [self.pop presentPopoverFromRect:CGRectMake(10, 10, 100, 100) inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+
+    }
+    else
+        [self presentModalViewController:picker animated:YES];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker
@@ -79,6 +87,9 @@
     self.label2.hidden = YES;
     self.label3.hidden = YES;
     self.selectImageButton.hidden = YES;
+    
+     if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad )
+         [self.pop dismissPopoverAnimated:YES];
     
     [self dismissModalViewControllerAnimated:YES];
     
@@ -134,27 +145,17 @@
     CGContextSetRGBFillColor(context, 0.0, 0.0, 1.0, 1);
 	
     char* chartext1	= (char *)[text1 cStringUsingEncoding:NSASCIIStringEncoding];
-<<<<<<< HEAD
-    CGContextSelectFont(context, "Futura-Medium", 44, kCGEncodingMacRoman);    
+
+    CGContextSelectFont(context, "Futura-Medium", 84, kCGEncodingMacRoman);    
     CGContextSetTextDrawingMode(context, kCGTextFill);
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
     char* chartext2	= (char *)[text2 cStringUsingEncoding:NSASCIIStringEncoding];
-    CGContextSelectFont(context, "Futura-Medium", 44, kCGEncodingMacRoman);
+    CGContextSelectFont(context, "Futura-Medium", 84, kCGEncodingMacRoman);
     CGContextSetTextDrawingMode(context, kCGTextFill);
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
     char* chartext3	= (char *)[text3 cStringUsingEncoding:NSASCIIStringEncoding];
-    CGContextSelectFont(context, "Futura-Medium", 44, kCGEncodingMacRoman);
-=======
-    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
-    CGContextSetTextDrawingMode(context, kCGTextFill);
-    CGContextSetRGBFillColor(context, 255, 255, 255, 1);
-    char* chartext2	= (char *)[text2 cStringUsingEncoding:NSASCIIStringEncoding];
-    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
-    CGContextSetTextDrawingMode(context, kCGTextFill);
-    CGContextSetRGBFillColor(context, 255, 255, 255, 1);
-    char* chartext3	= (char *)[text3 cStringUsingEncoding:NSASCIIStringEncoding];
-    CGContextSelectFont(context, "Arial", 90, kCGEncodingMacRoman);
->>>>>>> see how it works
+    CGContextSelectFont(context, "Futura-Medium", 84, kCGEncodingMacRoman);
+
     CGContextSetTextDrawingMode(context, kCGTextFill);
     CGContextSetRGBFillColor(context, 255, 255, 255, 1);
 	
@@ -162,9 +163,9 @@
     //rotate text
     //CGContextSetTextMatrix(context, CGAffineTransformMakeRotation( -M_PI/4 ));
 	
-    CGContextShowTextAtPoint(context, 4, h-100, chartext1, strlen(chartext1));
-    CGContextShowTextAtPoint(context, 4, h-200, chartext2, strlen(chartext2));
-    CGContextShowTextAtPoint(context, 4, h-300, chartext3, strlen(chartext3));
+    CGContextShowTextAtPoint(context, 10, h-300, chartext1, strlen(chartext1));
+    CGContextShowTextAtPoint(context, 10, h-400, chartext2, strlen(chartext2));
+    CGContextShowTextAtPoint(context, 10, h-500, chartext3, strlen(chartext3));
 	
 	
     CGImageRef imageMasked = CGBitmapContextCreateImage(context);
@@ -179,7 +180,18 @@
     [defaults setObject:self.photo forKey:@"image"];
     [defaults synchronize];
     
-    [self.delegate nextStep:2];
+    //TODO set the lock screen
+    UIImageWriteToSavedPhotosAlbum(self.photo, self, nil, nil);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Completed" message:@"The picture was saved at the Photo Library, now you can set it as the lock screen" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    
+    [alert show];
+    
+    [self.delegate finishedAndDismissed];
+    
+    // Open the photo library.
+    
+    //[self.delegate nextStep:2];
 }
 
 - (IBAction)cancelButton:(id)sender {

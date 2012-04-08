@@ -20,6 +20,7 @@
 @property (nonatomic,strong) IBOutlet UIButton *saveButton;
 @property (nonatomic,strong) IBOutlet UIButton *cancelButton;
 @property (nonatomic,strong) UIImage *photo;
+@property (nonatomic,strong) UIPopoverController * pop;
 
 @property (nonatomic,strong) id <LostDelegate> delegate;
 
