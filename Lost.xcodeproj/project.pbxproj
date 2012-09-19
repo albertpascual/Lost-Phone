@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760ED9FD160960F600A98F56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760ED9FC160960F600A98F56 /* Default-568h@2x.png */; };
 		767530A0152A9FAA00D077DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7675309F152A9FAA00D077DF /* UIKit.framework */; };
 		767530A2152A9FAA00D077DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767530A1152A9FAA00D077DF /* Foundation.framework */; };
 		767530A4152A9FAA00D077DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767530A3152A9FAA00D077DF /* CoreGraphics.framework */; };
@@ -72,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760ED9FC160960F600A98F56 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7675309B152A9FAA00D077DF /* Lost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7675309F152A9FAA00D077DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		767530A1152A9FAA00D077DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +167,7 @@
 		76753090152A9FAA00D077DF = {
 			isa = PBXGroup;
 			children = (
+				760ED9FC160960F600A98F56 /* Default-568h@2x.png */,
 				7675310D152AA8C700D077DF /* QuartzCore.framework */,
 				767530A5152A9FAA00D077DF /* Lost */,
 				7675309E152A9FAA00D077DF /* Frameworks */,
@@ -429,6 +432,7 @@
 				769CCC65152C165C007D2A0D /* InputInfoViewController.xib in Resources */,
 				769CCC6B152D4C48007D2A0D /* ImageLibraryViewController.xib in Resources */,
 				76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */,
+				760ED9FD160960F600A98F56 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
