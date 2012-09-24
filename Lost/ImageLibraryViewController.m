@@ -91,7 +91,8 @@
      if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad )
          [self.pop dismissPopoverAnimated:YES];
     
-    [self dismissModalViewControllerAnimated:YES];
+    else
+        [self dismissModalViewControllerAnimated:YES];
     
     self.photo = [self addText:self.photo line1:self.label1.text line2:self.label2.text line3:self.label3.text];
     self.selectedImage.image = self.photo;
