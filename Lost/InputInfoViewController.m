@@ -49,9 +49,15 @@
     // e.g. self.myOutlet = nil;
 }
 
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+//{
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+    //return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (IBAction)nextPressed:(id)sender {
