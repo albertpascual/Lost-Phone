@@ -70,6 +70,7 @@
 		769CCC6B152D4C48007D2A0D /* ImageLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 769CCC69152D4C48007D2A0D /* ImageLibraryViewController.xib */; };
 		76AF65371530E6AB0049193E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF65351530E6AB0049193E /* AboutViewController.m */; };
 		76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AF65361530E6AB0049193E /* AboutViewController.xib */; };
+		882A01FC1610F60800027BE2 /* AboutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A01FB1610F60800027BE2 /* AboutViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		76AF65341530E6AB0049193E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		76AF65351530E6AB0049193E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		76AF65361530E6AB0049193E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		882A01FB1610F60800027BE2 /* AboutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				769CCC69152D4C48007D2A0D /* ImageLibraryViewController.xib */,
 				76AF65341530E6AB0049193E /* AboutViewController.h */,
 				76AF65351530E6AB0049193E /* AboutViewController.m */,
+				882A01FB1610F60800027BE2 /* AboutViewController_iPad.xib */,
 				76AF65361530E6AB0049193E /* AboutViewController.xib */,
 			);
 			path = Lost;
@@ -433,6 +436,7 @@
 				769CCC6B152D4C48007D2A0D /* ImageLibraryViewController.xib in Resources */,
 				76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */,
 				760ED9FD160960F600A98F56 /* Default-568h@2x.png in Resources */,
+				882A01FC1610F60800027BE2 /* AboutViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -143,7 +143,11 @@
     
     else if (idx == 2 ) {
         //Last
-        self.about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+        if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad )
+            self.about = [[AboutViewController alloc] initWithNibName:@"AboutViewController_iPad" bundle:nil];
+            
+        else
+            self.about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
         
         if ( [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
             self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
