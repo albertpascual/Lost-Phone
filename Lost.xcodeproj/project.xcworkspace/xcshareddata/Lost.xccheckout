@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03025FD9-AD0A-4799-914C-A79F7641178C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lost</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>700EDFF7-EB79-45CB-AC11-41074937E45B</key>
+		<string>ssh://github.com/alpascual/Lost-Phone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lost.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>700EDFF7-EB79-45CB-AC11-41074937E45B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/alpascual/Lost-Phone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>700EDFF7-EB79-45CB-AC11-41074937E45B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>700EDFF7-EB79-45CB-AC11-41074937E45B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lost</string>
+		</dict>
+	</array>
+</dict>
+</plist>
