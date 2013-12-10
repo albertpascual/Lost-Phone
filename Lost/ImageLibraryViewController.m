@@ -183,9 +183,11 @@
 }
 
 - (IBAction)saveImage:(id)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:self.photo forKey:@"image"];
-    [defaults synchronize];
+   
+    //Cannot save that kind of object now
+    // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+   // [defaults setObject:self.photo forKey:@"image"];
+   // [defaults synchronize];
     
     //TODO set the lock screen
     UIImageWriteToSavedPhotosAlbum(self.photo, self, nil, nil);

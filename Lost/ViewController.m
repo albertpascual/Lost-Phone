@@ -133,7 +133,10 @@
             self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
         
         self.inputView.delegate = self;
-        [self presentModalViewController:self.inputView animated:YES];
+       // [self presentModalViewController:self.inputView animated:YES];
+        [self presentViewController:self.inputView animated:YES completion:^{
+            // NOTHING
+        }];
         
     }
     else if ( idx == 1 ) {
@@ -144,7 +147,10 @@
             self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
         
         self.imageLibrary.delegate = self;
-        [self presentModalViewController:self.imageLibrary animated:YES];
+        //[self presentModalViewController:self.imageLibrary animated:YES];
+        [self presentViewController:self.imageLibrary animated:YES completion:^{
+            // NOTHING
+        }];
     }
     
     else if (idx == 2 ) {
@@ -159,18 +165,27 @@
             self.inputView.modalPresentationStyle = UIModalPresentationFormSheet;
         
         self.about.delegate = self;
-        [self presentModalViewController:self.about animated:YES];
+        //[self presentModalViewController:self.about animated:YES];
+        [self presentViewController:self.about animated:YES completion:^{
+            // NOTHING
+        }];
     }
 }
 
 - (void) finishedAndDismissed
 {
-    [self dismissModalViewControllerAnimated:YES];
+    //[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{
+        //NOTHING
+    }];
 }
 
 - (void) nextStep:(NSInteger)screen
 {
-    [self dismissModalViewControllerAnimated:YES]; 
+    //[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{
+        //NOTHING
+    }];
     self.lastMenu = screen;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
                                                 selector:@selector(changeMenu) userInfo:nil repeats:NO];      
