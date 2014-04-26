@@ -8,8 +8,13 @@
 
 #import "ImageLibraryViewController.h"
 
-@interface ImageLibraryViewController ()
+#import "UIViewController+ECSlidingViewController.h"
+#import "MEDynamicTransition.h"
+#import "METransitions.h"
 
+@interface ImageLibraryViewController ()
+@property (nonatomic, strong) METransitions *transitions;
+@property (nonatomic, strong) UIPanGestureRecognizer *dynamicTransitionPanGesture;
 @end
 
 @implementation ImageLibraryViewController
@@ -210,6 +215,9 @@
      [self.delegate finishedAndDismissed];
 }
 
+- (IBAction)menuButtonTapped:(id)sender {
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
+}
 
 
 @end

@@ -8,8 +8,13 @@
 
 #import "AboutViewController.h"
 
-@interface AboutViewController ()
+#import "UIViewController+ECSlidingViewController.h"
+#import "MEDynamicTransition.h"
+#import "METransitions.h"
 
+@interface AboutViewController ()
+@property (nonatomic, strong) METransitions *transitions;
+@property (nonatomic, strong) UIPanGestureRecognizer *dynamicTransitionPanGesture;
 @end
 
 @implementation AboutViewController
@@ -51,6 +56,10 @@
 
 - (IBAction)backPressed:(id)sender {
     [self.delegate finishedAndDismissed];
+}
+
+- (IBAction)menuButtonTapped:(id)sender {
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
 }
 
 @end

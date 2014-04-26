@@ -83,11 +83,16 @@
     // dynamically so everything needs to start in a consistent state.
     self.slidingViewController.topViewController.view.layer.transform = CATransform3DMakeScale(1, 1, 1);
     
-    if ([menuItem isEqualToString:@"Transitions"]) {
+    if ([menuItem isEqualToString:@"Form"]) {
         self.slidingViewController.topViewController = self.transitionsNavigationController;
-    } else if ([menuItem isEqualToString:@"Settings"]) {
-        self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MESettingsNavigationController"];
     }
+    else if ([menuItem isEqualToString:@"Select Picture"]) {
+        self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TransitionImageSelect"];
+    }
+    else if ([menuItem isEqualToString:@"About"]) {
+        self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AboutStoryboard"];
+    }
+    
     
         
     [self.slidingViewController resetTopViewAnimated:YES];

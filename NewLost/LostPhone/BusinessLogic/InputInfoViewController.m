@@ -8,8 +8,13 @@
 
 #import "InputInfoViewController.h"
 
-@interface InputInfoViewController ()
+#import "UIViewController+ECSlidingViewController.h"
+#import "MEDynamicTransition.h"
+#import "METransitions.h"
 
+@interface InputInfoViewController ()
+@property (nonatomic, strong) METransitions *transitions;
+@property (nonatomic, strong) UIPanGestureRecognizer *dynamicTransitionPanGesture;
 @end
 
 @implementation InputInfoViewController
@@ -73,6 +78,10 @@
 
 - (IBAction)cancelPressed:(id)sender {
     [self.delegate finishedAndDismissed];
+}
+
+- (IBAction)menuButtonTapped:(id)sender {
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
 }
 
 @end

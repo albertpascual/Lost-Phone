@@ -102,6 +102,7 @@
                     <navigationItem key="navigationItem" id="JXy-XE-4G7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fXh-mW-8ta">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.2421875" green="0.41135378649999998" blue="0.74942974449999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
@@ -191,7 +192,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Form" id="UPw-yS-sso"/>
+                    <navigationItem key="navigationItem" title="Form" id="UPw-yS-sso">
+                        <barButtonItem key="leftBarButtonItem" image="options-black-dots.png" id="S6d-Gs-iqM">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="Vew-wq-7n4" id="vgo-tF-PSP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="line1" destination="acN-L3-chr" id="GE4-V2-CT6"/>
                         <outlet property="line2" destination="987-mg-4Jv" id="5w6-bI-cRj"/>
@@ -209,6 +216,7 @@
                     <navigationItem key="navigationItem" id="AbM-Dy-fmt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qg6-d9-gop">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.2421875" green="0.41135378649999998" blue="0.74942974449999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
@@ -227,9 +235,14 @@
         <!--Navigation Controller-->
         <scene sceneID="ai1-KZ-qh2">
             <objects>
-                <navigationController definesPresentationContext="YES" id="vHU-nL-iPT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AboutStoryboard" definesPresentationContext="YES" id="vHU-nL-iPT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="or0-6E-4db">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2421875" green="0.41135378649999998" blue="0.74942974449999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="y8x-0D-817" kind="relationship" relationship="rootViewController" id="4Gz-7n-kl6"/>
@@ -295,7 +308,13 @@
                             <constraint firstItem="SYW-wj-N9l" firstAttribute="leading" secondItem="Crx-we-LwE" secondAttribute="leading" id="wbg-5r-9ed"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About" id="PSf-D6-FAL"/>
+                    <navigationItem key="navigationItem" title="About" id="PSf-D6-FAL">
+                        <barButtonItem key="leftBarButtonItem" image="options-black-dots.png" id="Qf5-0K-0qo">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="y8x-0D-817" id="UMV-6l-UAz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOL-DD-8BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -333,6 +352,9 @@
                                 <state key="normal" title="Select Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickLibraryButton:" destination="Y4k-Yw-ba1" eventType="touchDown" id="Gdr-7K-Ewj"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-gZ-UNh">
                                 <rect key="frame" x="6" y="79" width="308" height="342"/>
@@ -369,7 +391,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Image" id="eHe-cy-mn2"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Select Image" id="LD8-xV-ftt">
+                        <barButtonItem key="leftBarButtonItem" image="options-black-dots.png" id="qzb-sS-rj4">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="Y4k-Yw-ba1" id="CkM-zn-3DZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="label1" destination="bYP-1E-b2L" id="WWp-SP-tyo"/>
                         <outlet property="label2" destination="22z-6x-6aU" id="Skj-1J-xY6"/>
@@ -378,11 +408,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecp-bA-mxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="1612"/>
+            <point key="canvasLocation" x="802" y="1612"/>
         </scene>
     </scenes>
     <resources>
         <image name="menu-background" width="520" height="763"/>
+        <image name="options-black-dots.png" width="25" height="5"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
