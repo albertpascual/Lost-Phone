@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-iZ-bmg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-iZ-bmg">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -60,7 +60,9 @@
                             <constraint firstItem="cLf-iZ-bmg" firstAttribute="leading" secondItem="f5y-RZ-4ee" secondAttribute="leading" id="3R9-3S-1IP"/>
                             <constraint firstAttribute="trailing" secondItem="Xof-Ec-99f" secondAttribute="trailing" id="Ewz-lW-JCH"/>
                             <constraint firstAttribute="bottom" secondItem="Xof-Ec-99f" secondAttribute="bottom" id="FLG-05-Peg"/>
+                            <constraint firstItem="cLf-iZ-bmg" firstAttribute="top" secondItem="f5y-RZ-4ee" secondAttribute="top" constant="64" id="eor-XE-NjO"/>
                             <constraint firstItem="Xof-Ec-99f" firstAttribute="leading" secondItem="f5y-RZ-4ee" secondAttribute="leading" id="ezK-kt-Qvc"/>
+                            <constraint firstItem="cLf-iZ-bmg" firstAttribute="leading" secondItem="f5y-RZ-4ee" secondAttribute="leading" id="fci-GQ-Okt"/>
                             <constraint firstAttribute="trailing" secondItem="cLf-iZ-bmg" secondAttribute="trailing" id="ftS-XI-Gwh"/>
                             <constraint firstItem="rfl-Te-ozR" firstAttribute="top" secondItem="cLf-iZ-bmg" secondAttribute="bottom" id="nWL-h6-yjB"/>
                         </constraints>
