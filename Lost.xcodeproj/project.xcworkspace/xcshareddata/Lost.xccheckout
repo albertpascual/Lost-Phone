@@ -10,29 +10,29 @@
 	<string>Lost</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>700EDFF7-EB79-45CB-AC11-41074937E45B</key>
+		<key>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</key>
 		<string>ssh://github.com/alpascual/Lost-Phone.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Lost.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>700EDFF7-EB79-45CB-AC11-41074937E45B</key>
+		<key>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/alpascual/Lost-Phone.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>700EDFF7-EB79-45CB-AC11-41074937E45B</string>
+	<string>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>700EDFF7-EB79-45CB-AC11-41074937E45B</string>
+			<string>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Lost</string>
 		</dict>
