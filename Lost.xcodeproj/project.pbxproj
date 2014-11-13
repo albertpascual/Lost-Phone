@@ -71,6 +71,7 @@
 		76AF65371530E6AB0049193E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF65351530E6AB0049193E /* AboutViewController.m */; };
 		76AF65381530E6AB0049193E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AF65361530E6AB0049193E /* AboutViewController.xib */; };
 		76FFDBF717EE6B9A00C3FF65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FFDBF617EE6B9A00C3FF65 /* Images.xcassets */; };
+		881E58351A143E980023C999 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 881E58341A143E980023C999 /* 120.png */; };
 		882A01FC1610F60800027BE2 /* AboutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A01FB1610F60800027BE2 /* AboutViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,7 @@
 		76AF65351530E6AB0049193E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		76AF65361530E6AB0049193E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		76FFDBF617EE6B9A00C3FF65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		881E58341A143E980023C999 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		882A01FB1610F60800027BE2 /* AboutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +241,7 @@
 		767530BF152AA01E00D077DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				881E58341A143E980023C999 /* 120.png */,
 				769CCC5A152BF673007D2A0D /* arrow-down-4.png */,
 				76753117152AAECA00D077DF /* Icons */,
 				7675310F152AAE7200D077DF /* Default.png */,
@@ -396,6 +399,7 @@
 				767530AA152A9FAA00D077DF /* InfoPlist.strings in Resources */,
 				767530B6152A9FAB00D077DF /* ViewController_iPhone.xib in Resources */,
 				767530B9152A9FAB00D077DF /* ViewController_iPad.xib in Resources */,
+				881E58351A143E980023C999 /* 120.png in Resources */,
 				767530D5152AA01E00D077DF /* 01-refresh.png in Resources */,
 				767530D6152AA01E00D077DF /* 19-gear.png in Resources */,
 				767530D7152AA01E00D077DF /* 23-bird.png in Resources */,

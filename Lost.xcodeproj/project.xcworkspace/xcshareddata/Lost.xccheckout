@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</key>
-		<string>ssh://github.com/alpascual/Lost-Phone.git</string>
+		<string>https://github.com/alpascual/Lost-Phone.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lost.xcodeproj/project.xcworkspace</string>
+	<string>Lost.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/alpascual/Lost-Phone.git</string>
+	<string>https://github.com/alpascual/Lost-Phone.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>C6B20325044A3BF67BEFC1E7EEEB0F14590B7E96</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Lost</string>
+			<string>Lost-Phone</string>
 		</dict>
 	</array>
 </dict>
