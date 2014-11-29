@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
@@ -17,11 +17,9 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="lake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="5">
                     <rect key="frame" x="40" y="58" width="240" height="74"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="18"/>
                         <constraint firstAttribute="height" constant="74" id="19"/>
@@ -29,14 +27,12 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="11">
                     <rect key="frame" x="40" y="342" width="240" height="74"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="74" id="21"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About Lost Phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6">
                     <rect key="frame" x="65" y="78" width="188" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="14"/>
                         <constraint firstAttribute="width" constant="188" id="15"/>
@@ -47,7 +43,6 @@
                 </label>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7">
                     <rect key="frame" x="-1" y="0.0" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="320" id="17"/>
                     </constraints>
@@ -62,14 +57,12 @@
                 </toolbar>
                 <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
                     <rect key="frame" x="40" y="158" width="240" height="176"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="176" id="20"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Customize your lock screen with you information for people to return it in the case you lose it" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="10">
                     <rect key="frame" x="65" y="177" width="188" height="127"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="127" id="16"/>
                     </constraints>
@@ -79,7 +72,6 @@
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Developed by Al Pascual - idea borrowed from Scott Hanselman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="12">
                     <rect key="frame" x="50" y="368" width="220" height="61"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="61" id="42"/>
                         <constraint firstAttribute="width" constant="220" id="43"/>
@@ -112,7 +104,7 @@
                 <constraint firstItem="7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="-1" id="40"/>
                 <constraint firstItem="4" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="41"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
@@ -120,4 +112,9 @@
         <image name="MovieTransportBackground.png" width="314" height="93"/>
         <image name="lake.jpg" width="320" height="480"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
