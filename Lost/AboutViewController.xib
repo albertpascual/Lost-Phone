@@ -15,17 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="lake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" image="lake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" misplaced="YES" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="5">
                     <rect key="frame" x="40" y="58" width="240" height="74"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="18"/>
                         <constraint firstAttribute="height" constant="74" id="19"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" misplaced="YES" image="MovieTransportBackground-long.png" translatesAutoresizingMaskIntoConstraints="NO" id="11">
                     <rect key="frame" x="40" y="342" width="240" height="74"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="74" id="21"/>
@@ -55,7 +55,7 @@
                     </items>
                     <color key="tintColor" red="0.26102668670000001" green="0.5449682361" blue="0.9293478261" alpha="1" colorSpace="calibratedRGB"/>
                 </toolbar>
-                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" image="MovieTransportBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" misplaced="YES" image="MovieTransportBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="9">
                     <rect key="frame" x="40" y="158" width="240" height="176"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="176" id="20"/>
@@ -70,7 +70,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Developed by Al Pascual - idea borrowed from Scott Hanselman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Developed by Al Pascual - idea borrowed from Scott Hanselman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="12">
                     <rect key="frame" x="50" y="368" width="220" height="61"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="61" id="42"/>
